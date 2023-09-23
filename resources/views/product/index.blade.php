@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.navbar')
 
 @section('content')
 
@@ -15,7 +16,8 @@
                 <!-- <img src="images/{{ $product->picture }}" class="card-img-top" alt="..."> -->
                 <div class="card-body">
                   <h5 class="card-title">Name :{{ $product->name }}</h5>
-                  <h5 class="card-title">Price: ${{ $product->price }}</h5>
+                  <h6 class="card-title">Category :{{ $product->category }}</h6>
+                  <h6 class="card-title">Price:{{ $product->price }}</h6>
                   <hr>
                   <button class="btn btn-warning">Edit</button>
                   <button class="btn btn-danger">Delete</button>

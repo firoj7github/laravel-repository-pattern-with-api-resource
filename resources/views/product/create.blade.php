@@ -1,4 +1,5 @@
 @extends('layouts.app')
+@extends('layouts.navbar')
 
 @section('content')
 
@@ -19,6 +20,10 @@
         <div class="mb-3">
             <label for="title" class="form-label">Name</label>
             <input type="text" class="form-control" name="name" id="name" placeholder="Enter name">
+          </div>
+        <div class="mb-3">
+            <label for="title" class="form-label">Category</label>
+            <input type="text" class="form-control" name="category" id="category" placeholder="Enter category">
           </div>
 
           <div class="mb-3">

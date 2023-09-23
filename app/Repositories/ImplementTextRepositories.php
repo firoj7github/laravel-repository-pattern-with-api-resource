@@ -10,8 +10,11 @@ class ImplementTextRepositories implements TextRepositories{
     }
 
     public function createProduct(array $data){
+     
         Product::insert([
-
+           'name'=>$data['name'],
+           'category'=>$data['category'],
+           'price'=>$data['price'],
         ]);
     }
 }

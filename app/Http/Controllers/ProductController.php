@@ -26,7 +26,7 @@ class ProductController extends Controller
    public function store(Request $request){
        $data = $request->all();
        $this->product->createProduct($data);
-       return redirect('/products');
+       return redirect('/');
 
    }
 }
