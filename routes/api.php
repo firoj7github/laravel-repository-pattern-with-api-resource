@@ -2,6 +2,7 @@
 
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\ProductController;
 
 /*
 |--------------------------------------------------------------------------
@@ -17,3 +18,7 @@ use Illuminate\Support\Facades\Route;
 Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
     return $request->user();
 });
+Route::post('/product/create',[ProductController::class, 'apistore']);
+Route::get('/products',[ProductController::class, 'getproduct']);
+Route::get('/customers',[ProductController::class, 'getcustomer']);
+Route::get('/countrys',[ProductController::class, 'getcountry']);
