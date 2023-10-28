@@ -21,7 +21,7 @@ class ProductResource extends JsonResource
             'picture'=>$this->picture,
             'price'=>$this->price,
             'category'=>$this->category,
-            'cus_id'=>CustomerResource::make($this->arrange),
+            'customer'=>CustomerResource::make($this->arrange),
             'country'=>CustomerResource::make($this->arrange->country),
             // 'created_at'=>$this->created_at,
             // 'updated_at'=>$this->updated_at,
